@@ -1,0 +1,189 @@
+
+client/test.c,15
+int main(3,20
+
+client/sendmsg.c,16
+int main(9,149
+
+client/client.c,145
+#define PORTCT 2,26
+#define PORTTW 3,46
+#define PORTCW 4,67
+#define SIZE 5,88
+#define CSIZE 6,107
+void find_worker(9,127
+int main(61,1149
+
+lib/csapp.h,730
+#define __CSAPP_H__3,41
+#define PORTCT 27,502
+#define PORTTW 28,522
+#define PORTCW 29,543
+#define SIZE 30,564
+#define CSIZE 31,583
+#define NUM_THREADS 32,601
+#define DEF_MODE 38,711
+#define DEF_UMASK 39,778
+typedef struct sockaddr SA;44,920
+#define RIO_BUFSIZE 49,1047
+    int rio_fd;51,1089
+    int rio_cnt;52,1159
+    char *rio_bufptr;rio_bufptr53,1225
+    char rio_buf[rio_buf54,1295
+} rio_t;55,1348
+#define	MAXLINE	63,1528
+#define MAXBUF 64,1578
+#define LISTENQ 65,1627
+typedef void handler_t(86,2255
+struct node{node176,5664
+    char mems[mems177,5677
+    char ipaddr[ipaddr178,5699
+} uses[uses179,5723
+struct mypara182,5740
+       int num;184,5756
+       int data;185,5772
+int num;188,5793
+
+lib/csapp.c,1994
+void unix_error(9,173
+void posix_error(16,317
+void dns_error(22,451
+void app_error(28,574
+pid_t Fork(40,864
+void Execve(50,997
+pid_t Wait(57,1166
+pid_t Waitpid(67,1306
+void Kill(77,1502
+void Pause(86,1635
+unsigned int Sleep(92,1685
+unsigned int Alarm(101,1826
+void Setpgid(105,1900
+pid_t Getpgrp(113,2035
+handler_t *Signal(Signal122,2221
+void Sigprocmask(136,2636
+void Sigemptyset(143,2795
+void Sigfillset(150,2908
+void Sigaddset(157,3019
+void Sigdelset(164,3146
+int Sigismember(171,3273
+int Open(184,3538
+ssize_t Read(193,3703
+ssize_t Write(202,3856
+off_t Lseek(211,4017
+void Close(220,4181
+int Select(228,4277
+int Dup2(238,4511
+void Stat(247,4634
+void Fstat(253,4750
+void *Mmap(Mmap262,4973
+void Munmap(271,5192
+void *Malloc(Malloc281,5463
+void *Realloc(Realloc290,5589
+void *Calloc(Calloc299,5734
+void Free(308,5880
+void Fclose(316,6055
+FILE *Fdopen(Fdopen322,6137
+char *Fgets(Fgets332,6283
+FILE *Fopen(Fopen342,6463
+void Fputs(352,6626
+size_t Fread(358,6737
+void Fwrite(367,6941
+int Socket(378,7190
+void Setsockopt(387,7351
+void Bind(395,7548
+void Listen(403,7706
+int Accept(411,7826
+void Connect(420,7995
+struct hostent *Gethostbyname(Gethostbyname433,8273
+struct hostent *Gethostbyaddr(Gethostbyaddr443,8468
+void Pthread_create(456,8820
+void Pthread_cancel(465,9051
+void Pthread_join(472,9187
+void Pthread_detach(480,9374
+void Pthread_exit(488,9528
+pthread_t Pthread_self(492,9591
+void Pthread_once(496,9653
+void Sem_init(504,9879
+void P(510,10018
+void V(516,10094
+ssize_t rio_readn(529,10436
+ssize_t rio_writen(555,11047
+static ssize_t rio_read(585,11924
+void rio_readinitb(617,12750
+ssize_t rio_readnb(629,12979
+ssize_t rio_readlineb(655,13607
+ssize_t Rio_readn(681,14177
+void Rio_writen(690,14345
+void Rio_readinitb(696,14472
+ssize_t Rio_readnb(701,14543
+ssize_t Rio_readlineb(710,14714
+int open_clientfd(729,15286
+int open_listenfd(759,16198
+int Open_clientfd(792,17274
+int Open_listenfd(805,17527
+
+tracker/recv_mem.h,28
+#define __RECV_MEM_H__2,23
+
+tracker/sort_mem.c,20
+void sort_mem(4,49
+
+tracker/sort_mem.h,28
+#define __SORT_MEM_H__2,23
+
+tracker/tracker.c,52
+void *output_mem(output_mem9,97
+int main(86,2535
+
+tracker/to_client.h,29
+#define __TO_CLIENT_H__2,24
+
+tracker/to_client.c,32
+void *to_client(to_client5,72
+
+tracker/recv_mem.c,30
+void *recv_mem(recv_mem4,49
+
+worker/sendmsg.c,16
+int main(9,149
+
+worker/sendmem.c,247
+typedef struct PACKEDMEM 3,27
+char name[name5,99
+long long total;6,174
+char name2[name27,192
+long long free;8,208
+}MEM_OCCUPY;MEM_OCCUPY9,247
+void get_memoccupy 12,262
+void *send_meminfo(send_meminfo30,899
+void p_send_meminfo(75,1772
+
+worker/worker.c,384
+typedef struct PACKEDMEM 10,171
+char name[name12,243
+long long total;13,318
+char name2[name214,336
+long long free;15,352
+}MEM_OCCUPY;MEM_OCCUPY16,391
+void get_memoccupy 19,406
+void *send_meminfo(send_meminfo37,1054
+void p_send_meminfo(82,1973
+int main(91,2106
+void doit(128,2764
+void responseToClient(164,3693
+void exeClientUploadFile(173,3877
+void sig_cld(193,4296
+
+worker/workerwy.c,300
+#define PORTCT 13,214
+#define PORTTW 14,234
+#define PORTCW 15,255
+typedef struct PACKEDMEM 20,310
+char name[name22,382
+long long total;23,457
+char name2[name224,475
+long long free;25,491
+}MEM_OCCUPY;MEM_OCCUPY26,530
+void get_memoccupy 29,545
+void send_meminfo(47,1182
+int main(93,2055
